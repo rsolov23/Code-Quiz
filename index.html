@@ -11,23 +11,55 @@
 </head>
 <body>
 <header>
-    <div class="high-score">
+    <div class="high-score"><!--high score details-->
     <a class="score" href="/highscores.html">High Scores</a>
 </div>
-<div class="time-remaining">
-    <span class="timer" href="/time-remaining.html">Time Remaining <b>0</b></span>
+<div class="time-remaining"><!--time remaining -->
+    <span class="timer" href="/time-remaining.html">Time Remaining <b id="time">180</b></span>
     </div>
 </header>
-</div>
+<section id="start-content" class="quiz-information">
     <div class="container">
-        <h1> Code Quiz</h1>
+        <h1> Code Quiz</h1><!--heading of quiz-->
     </div>
-    <p>Test your knowledge of coding in this quiz. </br> 
+    <p>Test your knowledge of coding in this quiz. </br> <!--info about quiz-->
        When a question is answered incorrectly 15 seconds will be deducted.
     </p>
-    
-        <div id="start" class="flex-center flex column"></div>
-        <div class="start-button"><button>Start Quiz</button>
-</div>  
+    <div id="start" class="flex-center flex column"></div><!--start quiz button-->
+    <div class="start-button"><button id="startQuiz">Start Quiz</button></div>
+</div> 
+</section> 
+<div></div></br>
+<section id="questions" class="questionsContent hide">
+    <div class="quizContainer" style="display: none;">
+        <h2 id="question">Placeholder</h2>
+        <button id='A' class="answer">choice</button><br>
+        <button id='B' class="answer">choice</button><br>
+        <button id='C' class="answer">choice</button><br>
+        <button id='D' class="answer">choice</button>
+    </div> 
+
+    <div class="progression" style="display: none;">
+        <p id="right">Right✅</p>
+        <p id="wrong">Wrong❌</p>
+    </div>
+</section>
+<!--Opens after quiz is complete-->
+<div id="quizScore" class="hide" style="display: none;">
+    <h2>Great Job!</h2>
+    <p id="endScore"></p>
+    <div class="submit-quiz-score">
+        <p class="enter-initials">
+            Enter your initials:
+            <input type="text" placeholder="Enter you initials:" id="initials"/>
+            <button id="subScore" class="submitButton">Submit</button>
+            <button id="replay" class="replayButton">REPLAY</button>
+        </p>
+    </div>
+</div>
+<!-- <footer> 
+    <h4>❤️ Made by Rachel Solov</h4>
+</footer> -->
+    <script src="assets/js/script.js"></script>
 </body>
 </html>

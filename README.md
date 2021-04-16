@@ -19,6 +19,7 @@ This is a Javascript Quiz.
 1. Click on Start Quiz
 2. Answer 6 multiple choice questions
 3. Enter your initials to submit your score
+4. Click on High Score to see your entry
 
 ### Github Profile
 

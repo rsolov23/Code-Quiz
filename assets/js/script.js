@@ -130,7 +130,7 @@ function checkAnswerAndIterate(event) {
     populateQuestions();
   }
 }
-
+// function to enter score
 function enterScore() {
   questionAnswer.style.display = "none";
   quizScore.style.display = "block";
@@ -139,7 +139,7 @@ function enterScore() {
   document.getElementById("finalScore").innerHTML =
     "your score is" + "scoreListItem";
 }
-
+//function to create score list
 function createScoreList() {
   let scoreList = Object.values(localStorage);
   for (let i = 0; i < scoreList.length; i++) {
@@ -148,7 +148,7 @@ function createScoreList() {
     document.getElementById("high-scores-list").appendChild(scoreListItem);
   }
 }
-
+//function to toggle score list
 function toggleScoreList() {
   for (let i = 0; i < document.getElementsByTagName("*"); i++) {
     document
@@ -163,20 +163,17 @@ function toggleScoreList() {
   createScoreList();
 }
 
-function submitInitials() {
-  if (checkAnswerAndIterate >= "6") {
-    onclick.addEventListener("submit").btn;
-  }
-}
+//// save to local function
 function saveToLocal(event) {
   event.preventDefault();
   debugger;
   var timer = event.target.children[1].value;
   // let timer = document.getElementById("timeRemaining").value;
-  let finalScore = { score: time };
-  JSON.parse(localStorage.getItem("timeRemaining"));
+  let finalScore = { score: timeRemaining };
+  JSON.parse(localStorage.getItem("timer"));
+  console.log(localStorage.getItem("timer"));
   localStorage.getItem("timeRemaining");
-  localStorage.setItem("timeRemaining", time);
+  localStorage.setItem("timeRemaining", timer);
   debugger;
 }
 //event listeners

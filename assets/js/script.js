@@ -169,11 +169,16 @@ function saveToLocal(event) {
   debugger;
   var timer = event.target.children[1].value;
   // let timer = document.getElementById("timeRemaining").value;
-  let finalScore = { score: timeRemaining };
+  let finalScore = {
+    initials: initialsVal,
+    score: countdown,
+  };
   JSON.parse(localStorage.getItem("timer"));
   console.log(localStorage.getItem("timer"));
   localStorage.getItem("timeRemaining");
   localStorage.setItem("timeRemaining", timer);
+  var initialsVal = event.target.children[1].value;
+  localStorage.setItem("userScore", JSON.stringify(finalScore));
   debugger;
 }
 //event listeners

@@ -7,9 +7,23 @@
 /* gives page background color*/
 body {
   background-color: #d4f1f4;
+  background-image: url(../images/background.png);
+}
+button {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
 }
 /*gives high score button its properties*/
-.score {
+/* .score {
   line-height: 28px;
   width: 20px;
   font-size: 14pt;
@@ -20,7 +34,7 @@ body {
   top: 0;
   left: 0;
   text-decoration: none;
-}
+} */
 /* gives timer its properties*/
 .timer {
   line-height: 28px;

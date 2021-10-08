@@ -29,8 +29,4 @@ https://github.com/rsolov23/
 
 https://rsolov23.github.io/Code-Quiz/
 
-### Contributors
 
-- Rachel Solov
-- Mad props to Google, Stack Overflow, and MDN Web Docs❤️
-- Special shout out to Sean, Donte, Brendan, Megan, Tori, Mike, Bradley, Ask BCS and all my classmates❤️

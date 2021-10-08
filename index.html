@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
     <link rel="shortcut icon" type"favicon"
     href="C:\Users\rsolo\OneDrive\Pictures\Saved Pictures\favicon.ico">
@@ -20,54 +25,76 @@
         </div>
         <div class="time-remaining">
           <!--time remaining -->
-          <span id="timeRemaining" class="timer" href="/time-remaining.html"
-            >Time Remaining <b id="time">180</b></span
-          >
+          <button id="timeRemaining" class="timer" href="/time-remaining.html">
+            Time Remaining <b id="time">180</b>
+          </button>
         </div>
       </div>
     </header>
-    <section id="start-content" class="quiz-information">
-      <div class="container">
-        <h1>Code Quiz</h1>
-        <!--heading of quiz-->
-      </div>
-      <p>
-        Test your knowledge of coding in this quiz.
-        <!--info about quiz-->
-        When a question is answered incorrectly 15 seconds will be deducted.
-      </p>
-      <div id="start" class="flex-center flex column">
-        <!--start quiz button-->
-        <div class="start-button">
-          <button id="startQuiz">Start Quiz</button>
+    <div class="col d-flex justify-content-center">
+      <div class="card text-center" style="width: 45rem">
+        <div class="card-body">
+          <section id="start-content" class="quiz-information">
+            <div class="container">
+              <h1>Code Quiz</h1>
+              <!--heading of quiz-->
+            </div>
+            <p>
+              Test your knowledge of coding in this quiz.
+              <!--info about quiz-->
+              When a question is answered incorrectly 15 seconds will be
+              deducted.
+            </p>
+            <div id="start" class="flex-center flex column">
+              <!--start quiz button-->
+              <div class="start-button">
+                <button id="startQuiz" style="border: 1px solid #2c3832">
+                  Start Quiz
+                </button>
+              </div>
+            </div>
+          </section>
+          <section id="questions" class="questionsContent hide">
+            <div id="questionAnswer">
+              <div class="quizContainer" style="display: none">
+                <h2 id="question">Placeholder</h2>
+                <button id="A" class="answer">choice</button><br />
+                <button id="B" class="answer">choice</button><br />
+                <button id="C" class="answer">choice</button><br />
+                <button id="D" class="answer">choice</button>
+              </div>
+            </div>
+
+            <div class="progression" style="display: none">
+              <p id="right">Right✅</p>
+              <p id="wrong">Wrong❌</p>
+            </div>
+          </section>
         </div>
       </div>
-    </section>
-    <section id="questions" class="questionsContent hide">
-      <div id="questionAnswer">
-        <div class="quizContainer" style="display: none">
-          <h2 id="question">Placeholder</h2>
-          <button id="A" class="answer">choice</button><br />
-          <button id="B" class="answer">choice</button><br />
-          <button id="C" class="answer">choice</button><br />
-          <button id="D" class="answer">choice</button>
-        </div>
-      </div>
-      <div class="progression" style="display: none">
-        <p id="right">Right✅</p>
-        <p id="wrong">Wrong❌</p>
-      </div>
-    </section>
+    </div>
     <!--Opens after quiz is complete-->
     <div id="quizScore">
       <p id="endScore"></p>
       <div class="submit-quiz-score">
-        <form id="subScore" type="hidden">
+        <form
+          id="subScore"
+          type="hidden"
+          class="text-center"
+          style="background-color: #607f92"
+        >
           <label class="enter-initials" for="initials">
             Enter your initials:</label
           >
-          <input type="text" placeholder="Enter you initials:" id="initials" />
-          <button id="button" type="submit" class="hidden">Submit</button>
+          <input type="text" placeholder="RSS" id="initials" />
+          <button
+            id="button"
+            type="submit"
+            class="hidden"
+            style="border: 1px solid #2c3832"
+          >
+            Submit
+          </button>
         </form>
       </div>
     </div>

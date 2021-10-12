@@ -8,107 +8,52 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
-    <link rel="shortcut icon" type"favicon"
-    href="C:\Users\rsolo\OneDrive\Pictures\Saved Pictures\favicon.ico">
     <title>Code Quiz</title>
   </head>
   <body>
-    <header>
-      <div id="not-scores">
-        <div class="high-score">
-          <!--high score details-->
-          <button href="#" class="score" id="high-score-toggle">
-            High Scores
-          </button>
-        </div>
-        <div class="time-remaining">
-          <!--time remaining -->
-          <button id="timeRemaining" class="timer" href="/time-remaining.html">
-            Time Remaining <b id="time">180</b>
-          </button>
-        </div>
-      </div>
-    </header>
-    <div class="col d-flex justify-content-center">
-      <div class="card text-center" style="width: 45rem">
-        <div class="card-body">
-          <section id="start-content" class="quiz-information">
-            <div class="container">
-              <h1>Code Quiz</h1>
-              <!--heading of quiz-->
-            </div>
-            <p>
-              Test your knowledge of coding in this quiz.
-              <!--info about quiz-->
-              When a question is answered incorrectly 15 seconds will be
-              deducted.
-            </p>
-            <div id="start" class="flex-center flex column">
-              <!--start quiz button-->
-              <div class="start-button">
-                <button id="startQuiz" style="border: 1px solid #2c3832">
-                  Start Quiz
-                </button>
-              </div>
-            </div>
-          </section>
-          <section id="questions" class="questionsContent hide">
-            <div id="questionAnswer">
-              <div class="quizContainer" style="display: none">
-                <h2 id="question">Placeholder</h2>
-                <button id="A" class="answer">choice</button><br />
-                <button id="B" class="answer">choice</button><br />
-                <button id="C" class="answer">choice</button><br />
-                <button id="D" class="answer">choice</button>
-              </div>
-            </div>
-
-            <div class="progression" style="display: none">
-              <p id="right">Right✅</p>
-              <p id="wrong">Wrong❌</p>
-            </div>
-          </section>
-        </div>
-      </div>
-    </div>
-    <!--Opens after quiz is complete-->
-    <div id="quizScore">
-      <p id="endScore"></p>
-      <div class="submit-quiz-score">
-        <form
-          id="subScore"
-          type="hidden"
-          class="text-center"
-          style="background-color: #607f92"
-        >
-          <label class="enter-initials" for="initials">
-            Enter your initials:</label
-          >
-          <input type="text" placeholder="RSS" id="initials" />
-          <button
-            id="button"
-            type="submit"
-            class="hidden"
-            style="border: 1px solid #2c3832"
-          >
-            Submit
-          </button>
-        </form>
-      </div>
-    </div>
-    <!-- class="hide" style="display: none;"> -->
-    <ol id="high-scores-list" style="display: none"></ol>
-    <div id="score-page" style="display: none">
-      <h3>High Score</h3>
-      <ul id="HS-initials"></ul>
-      <div id="Score"></div>
+    <div class="scores">
+      <a href="highscores.html"><i class="fas fa-crown"></i>View Highscores</a>
     </div>
 
-    <!-- <footer>
-      <h4>❤️ Made by Rachel</h4>
-    </footer> -->
-    <script src="assets/js/script.js"></script>
+    <div class="timer">
+      <i class="fas fa-stopwatch"></i>Time: <span id="time">0</span>
+    </div>
+
+    <div class="wrapper">
+      <div id="start-screen" class="start">
+        <h1 class="code-quiz">Code Quiz</h1>
+        <p>
+          Test your knowledge of coding in this quiz. When a question is
+          answered incorrectly 15 seconds will be deducted.
+        </p>
+        <button id="start" class="button-74" role="button">Start Quiz</button>
+
+      </div>
+
+      <div id="questions" class="hide">
+        <h2 id="question-title"></h2>
+        <div id="choices" class="choices"></div>
+      </div>
+
+      <div id="end-screen" class="hide">
+        <h2>All done!</h2>
+        <p>Your final score is <span id="final-score"></span>.</p>
+        <p>
+          Enter initials: <input type="text" id="initials" max="3" />
+          <button id="submit">Submit</button>
+        </p>
+      </div>
+
+      <div id="feedback" class="feedback hide"></div>
+    </div>
+
+    <script src="./assets/js/questions.js"></script>
+    <script src="./assets/js/logic.js"></script>
   </body>
 </html>

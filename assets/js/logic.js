@@ -77,12 +77,12 @@ function questionClick() {
     // play "wrong" sound effect
     sfxWrong.play();
 
-    feedbackEl.textContent = "Wrong!";
+    feedbackEl.textContent = "Wrong!❌";
   } else {
     // play "right" sound effect
     sfxRight.play();
 
-    feedbackEl.textContent = "Correct!";
+    feedbackEl.textContent = "Correct!✅";
   }
 
   // flash right/wrong feedback on page for half a second

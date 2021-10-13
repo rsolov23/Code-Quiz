@@ -28,12 +28,11 @@
     <div class="wrapper">
       <div id="start-screen" class="start">
         <h1 class="code-quiz">Code Quiz</h1>
-        <p>
+        <p class="instructions">
           Test your knowledge of coding in this quiz. When a question is
           answered incorrectly 15 seconds will be deducted.
         </p>
         <button id="start" class="button-74" role="button">Start Quiz</button>
-
       </div>
 
       <div id="questions" class="hide">
@@ -46,13 +45,13 @@
         <p>Your final score is <span id="final-score"></span>.</p>
         <p>
           Enter initials: <input type="text" id="initials" max="3" />
-          <button id="submit">Submit</button>
+          <button id="submit" class="button-74" role="button">Submit</button>
         </p>
       </div>
 
       <div id="feedback" class="feedback hide"></div>
     </div>
-
+    <footer>Made with 💜 by Rachel Solov</footer>
     <script src="./assets/js/questions.js"></script>
     <script src="./assets/js/logic.js"></script>
   </body>

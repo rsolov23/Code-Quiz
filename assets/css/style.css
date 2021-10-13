@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap");
+* {
+  color: #011753;
+}
 body {
   font-family: "Inconsolata", monospace;
   font-size: 120%;
@@ -6,7 +9,10 @@ body {
   opacity: 0.9;
 }
 .scores,
-.timer {
+.timer,
+h2,
+p,
+footer {
   font-weight: 900;
   padding: 1rem;
 }
@@ -14,20 +20,22 @@ i {
   padding-right: 5px;
 }
 a {
-  color: #563d7c;
+  color: #011753;
   text-decoration: none;
   transition: color 0.1s;
 }
+.instructions {
+  font-weight: 900;
+}
 
 a:hover {
-  color: #8570a5;
+  color: #006091;
 }
 .code-quiz {
   font-size: 8vw;
   line-height: 8vw;
   margin: 0;
-  font-family: "Red Hat Display", sans-serif;
-  font-weight: 900;
+  font-weight: 999;
   background: url(../images/bg3.jpg);
   background-size: 40%;
   background-position: 50% 50%;
@@ -80,7 +88,7 @@ button:hover {
 }
 
 .button-74:hover {
-  background-color: #fff;
+  background-color: #fbffd7;
 }
 
 .button-74:active {
@@ -96,6 +104,10 @@ button:hover {
 }
 .choices button {
   display: block;
+  padding: 1rem;
+  border-radius: 5px;
+  color: #011753;
+  font-weight: 800;
 }
 
 input[type="text"] {
@@ -149,4 +161,13 @@ li:nth-child(odd) {
   position: absolute;
   top: 10px;
   right: 10px;
+}
+footer {
+  position: fixed;
+  padding: 10px 10px 0px 10px;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
 }

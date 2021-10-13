@@ -1,35 +1,36 @@
 // list of all questions, choices, and answers
 var questions = [
   {
-    title: "Commonly used data types DO NOT include:",
-    choices: ["strings", "booleans", "alerts", "numbers"],
-    answer: "alerts",
+    title:
+      "A plain language description of the steps that an algorithm or application must complete is called:",
+    choices: ["an operation", "pseudocoding", "an array", "a condition"],
+    answer: "pseudocoding",
   },
   {
-    title: "The condition in an if / else statement is enclosed within ____.",
-    choices: ["quotes", "curly brackets", "parentheses", "square brackets"],
-    answer: "parentheses",
+    title: "What element is used to incorporate JavaScript into HTML?",
+    choices: ["<java>", "<body>", "<script>", "<header>"],
+    answer: "<script>",
   },
   {
-    title: "Arrays in JavaScript can be used to store ____.",
-    choices: [
-      "numbers and strings",
-      "other arrays",
-      "booleans",
-      "all of the above",
-    ],
-    answer: "all of the above",
+    title: "Which of the following is NOT an operator?",
+    choices: ["@", "!==", "===", "<="],
+    answer: "@",
   },
   {
     title:
-      "String values must be enclosed within ____ when being assigned to variables.",
-    choices: ["commas", "curly brackets", "quotes", "parentheses"],
-    answer: "quotes",
+      "How do you convert an array into a string for saving in localStorage?",
+    choices: ["string<>", "map()", "Number()", "stringify()"],
+    answer: "stringify()",
   },
   {
     title:
-      "A very useful tool used during development and debugging for printing content to the debugger is:",
-    choices: ["JavaScript", "terminal / bash", "for loops", "console.log"],
+      "What is a means of organizing and structuring data thats transferred from one place to another?",
+    choices: ["callback function", "JSON", "localStorage", ".querySelector"],
+    answer: "JSON",
+  },
+  {
+    title: "Which of the following is NOT a falsy value",
+    choices: ["console.log", "0", "Null", "NaN"],
     answer: "console.log",
   },
 ];
